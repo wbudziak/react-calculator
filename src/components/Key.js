@@ -13,7 +13,7 @@ const Key = (props) => {
   };
   return (
     <>
-      <button
+      <div
         className={styles.key}
         type="submit"
         style={
@@ -30,7 +30,7 @@ const Key = (props) => {
         type={props.type}
       >
         {props.text}
-      </button>
+      </div>
     </>
   );
 };

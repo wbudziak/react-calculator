@@ -20,11 +20,7 @@ const Inputs = (props) => {
         readOnly
         // value={finalResult === "" ? prev + displayOperator : ""}
         value={
-          prev === ""
-            ? ""
-            : finalResult === ""
-            ? parseFloat(prev).toLocaleString() + displayOperator
-            : ""
+          prev === "" ? "" : finalResult === "" ? prev + displayOperator : ""
         }
       />
       <input
@@ -34,11 +30,7 @@ const Inputs = (props) => {
         placeholder="0"
         readOnly
         value={
-          current === ""
-            ? "0"
-            : finalResult === ""
-            ? parseFloat(current).toLocaleString()
-            : parseFloat(finalResult).toLocaleString()
+          current === "" ? "0" : finalResult === "" ? current : finalResult
         }
       />
     </screen>
