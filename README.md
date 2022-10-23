@@ -1,1 +1,1 @@
-My first ever project made in React
+My first project made in React
