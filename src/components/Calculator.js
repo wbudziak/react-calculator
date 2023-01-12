@@ -68,6 +68,7 @@ const Calculator = (props) => {
     setMinusClicked(false);
     setDisplayOperator("");
   };
+
   const equalHandler = (e) => {
     if (current === "") {
       setCurrent(prev);
@@ -140,7 +141,7 @@ const Calculator = (props) => {
       equalHandler(e);
     }
     if (e.target.getAttribute("type") === "reset") {
-      reset(e);
+      setCurrent(0);
     }
     if (e.target.getAttribute("type") === "switch") {
       switchHandler(e);
